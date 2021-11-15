@@ -11,11 +11,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val fragment1Btn:Button=findViewById(R.id.fragment1)
         val fragment2Btn:Button=findViewById(R.id.fragment2)
+        val fragment1=Fragment1()
+        val fragment2=Fragment2()
         fragment1Btn.setOnClickListener{
-            replaceFragment(Fragment1())
+            replaceFragment(fragment1)
         }
         fragment2Btn.setOnClickListener {
-            replaceFragment(Fragment2())
+            replaceFragment(fragment2)
         }
     }
 
